@@ -1,0 +1,11 @@
+# Interfaz de usuario
+streamlit
+
+# Orquestación de LLM y Conectores
+langchain
+langchain-community
+langchain-ollama
+
+# Manejo de datos y bases de datos
+pandas
+sqlalchemy
