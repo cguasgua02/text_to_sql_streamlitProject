@@ -18,7 +18,7 @@ La solución utiliza una arquitectura de capas desacopladas para garantizar esca
 El sistema está diseñado para operar en dos modalidades según las necesidades de privacidad o potencia de cálculo:
 
 1.  **Modelo Local (Llama 3):** Ejecutado mediante **Ollama**. Ideal para entornos que requieren soberanía absoluta de los datos y costo cero por token.
-2.  **Modelo Cloud (Gemini 1.5 Pro):** Integrado vía API para casos de uso que requieren un razonamiento lógico superior en esquemas multitable complejos (como el dataset Spider).
+2.  **Modelo Cloud (Gemini 3 Flash):** Integrado vía API para casos de uso que requieren un razonamiento lógico superior en esquemas multitable complejos (como el dataset Spider).
 
 ---
 
@@ -65,14 +65,23 @@ Para asegurar el funcionamiento del sistema, se requieren las siguientes depende
     ```bash
     python src/database.py
     ```
+
 3.  **Configurar credenciales:**
     Cree un archivo `.env` en la raíz y añada su `GEMINI_API_KEY=tu_llave_aqui`.
 4.  **Ejecutar la aplicación:**
+
+    **Para el caso de LLama 3**
     ```bash
     streamlit run src/app.py
+    ```
+
+    **Para el caso de Gemini 3 Flash**
+    ```bash
+    streamlit run src/app_api.py
     ```
 
 ---
 **Postulante:** Cristian Guasgua  
 **Institución:** Universidad San Francisco de Quito (USFQ)  
+
 **Cargo:** Data Scientist / Ingeniero en Automatización
