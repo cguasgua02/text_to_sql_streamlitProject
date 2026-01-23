@@ -9,10 +9,11 @@ El flujo de información sigue un pipeline lineal y seguro para garantizar la pr
 1.  **Entrada:** El usuario ingresa una pregunta en la interfaz de chat (Streamlit).
 2.  **Extracción de Metadatos:** El sistema utiliza **SQLAlchemy** para leer el esquema actual de la base de datos (tablas y columnas).
 3.  **Prompt Engineering:** Se construye un prompt que combina la pregunta del usuario con el esquema real para evitar alucinaciones.
-4.  **Inferencia LLM:** * *Modo Local:* Llama 3 genera el código SQL (Privacidad).
-    * *Modo Cloud:* Gemini 1.5 Pro procesa esquemas complejos (Potencia).
-5.  **Limpieza y Ejecución:** Se eliminan caracteres de formato (backticks) y se ejecuta el SQL en el motor correspondiente.
-6.  **Visualización:** Los resultados se presentan en tablas de datos interactivas dentro del chat.
+4.  **Inferencia LLM:**
+    * *Modo Local:* Llama 3 genera el código SQL (Privacidad).
+    * *Modo Cloud:* Gemini 3 Flash procesa esquemas complejos (Potencia).
+6.  **Limpieza y Ejecución:** Se eliminan caracteres de formato (backticks) y se ejecuta el SQL en el motor correspondiente.
+7.  **Visualización:** Los resultados se presentan en tablas de datos interactivas dentro del chat.
 
 ---
 
@@ -60,3 +61,4 @@ Esta solución ha sido diseñada para integrarse en el ecosistema de automatizac
 ---
 **Postulante:** Cristian Guasgua  
 **Especialidad:** Data Science & Automation
+
